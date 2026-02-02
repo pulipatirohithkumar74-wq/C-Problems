@@ -1,10 +1,18 @@
 #include <stdio.h>
-#include <string.h>
+
 int main() {
-    //Your Code goes here!
-    char ch[100];
-    scanf("%s",&ch);
-    strupr(ch);
-    printf("%s",ch);
+    char str[50];
+    int i, len = 0;
+
+    scanf("%s", str);
+
+    while (str[len] != '\0') {
+        len++;
+    }
+
+    for (i = len - 1; i >= 0; i--) {
+        printf("%c", str[i]);
+    }
+
     return 0;
 }
