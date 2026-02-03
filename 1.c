@@ -1,22 +1,26 @@
 #include <stdio.h>
-#include <string.h>
-int main() {
-    //Your Code goes here!
-    char ch[100],rev[100];
-      int i,j=0;
-      scanf("%s",ch);
-      for(i=strlen(ch)-1;i>=0;i--){
-        rev[j]=ch[i];
-        j++;
-      }
-        rev[j]='\0';
-        if(strcmp(ch,rev)==0){
-            printf("polindrom");
-        }
-        else{
-            printf("not polindrom");
-        }
 
-      
+int main() {
+    char str[100];
+    int i, j, flag = 0;
+
+    scanf("%s", str);
+
+    for (i = 0; str[i] != '\0'; i++) {
+        for (j = i + 1; str[j] != '\0'; j++) {
+            if (str[i] == str[j]) {
+                flag = 1;
+                break;
+            }
+        }
+        if (flag == 1)
+            break;
+    }
+
+    if (flag)
+        printf("Duplicates found");
+    else
+        printf("No duplicates");
+
     return 0;
 }
