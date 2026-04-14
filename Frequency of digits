@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, digit, rem, count=0;
+
+    scanf("%d",&n);
+    scanf("%d",&digit);
+
+    while(n>0)
+    {
+        rem = n%10;
+        if(rem == digit)
+            count++;
+        n /= 10;
+    }
+
+    printf("%d",count);
+
+    return 0;
+}
