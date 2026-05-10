@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int age, fare = 500;
+
+    scanf("%d",&age);
+
+    if(age < 5)
+        printf("Free Ticket");
+
+    else if(age >= 60)
+        printf("Ticket Price = %d", fare/2);
+
+    else
+        printf("Ticket Price = %d", fare);
+
+    return 0;
+}
