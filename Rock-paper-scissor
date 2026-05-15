@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int user, computer=2;
+
+    scanf("%d",&user);
+
+    if(user == computer)
+        printf("Draw");
+
+    else if((user==1 && computer==2) ||
+            (user==2 && computer==3) ||
+            (user==3 && computer==1))
+        printf("You Win");
+
+    else
+        printf("Computer Wins");
+
+    return 0;
+}
