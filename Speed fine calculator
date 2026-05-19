@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int speed;
+
+    scanf("%d",&speed);
+
+    if(speed > 100)
+        printf("Heavy Fine");
+
+    else if(speed > 60)
+        printf("Warning");
+
+    else
+        printf("Safe Driving");
+
+    return 0;
+}
