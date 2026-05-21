@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int likes;
+
+    scanf("%d",&likes);
+
+    if(likes >= 1000)
+        printf("Viral Post");
+    else
+        printf("Normal Post");
+
+    return 0;
+}
