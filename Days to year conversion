@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int days, years;
+
+    scanf("%d",&days);
+
+    years = days / 365;
+
+    printf("%d Years",years);
+
+    return 0;
+}
