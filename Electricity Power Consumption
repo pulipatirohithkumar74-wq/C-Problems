@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    float voltage, current, power;
+
+    scanf("%f %f",&voltage,&current);
+
+    power = voltage * current;
+
+    printf("Power = %.2f",power);
+
+    return 0;
+}
