@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int otp = 5678, input;
+
+    scanf("%d",&input);
+
+    if(input == otp)
+        printf("OTP Verified");
+    else
+        printf("Invalid OTP");
+
+    return 0;
+}
