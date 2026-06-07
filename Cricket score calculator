@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int singles, fours, sixes, total;
+
+    scanf("%d %d %d",&singles,&fours,&sixes);
+
+    total = singles + (fours*4) + (sixes*6);
+
+    printf("Total Score = %d",total);
+
+    return 0;
+}
