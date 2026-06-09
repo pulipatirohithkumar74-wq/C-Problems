@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int enemy = 100;
+
+    while(enemy > 0)
+    {
+        enemy -= 20;
+
+        printf("Enemy HP = %d\n", enemy);
+    }
+
+    printf("Enemy Defeated!");
+
+    return 0;
+}
