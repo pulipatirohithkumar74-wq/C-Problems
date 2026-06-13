@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int secret = 37;
+    int guess;
+
+    while(1)
+    {
+        printf("Guess the number: ");
+        scanf("%d",&guess);
+
+        if(guess == secret)
+        {
+            printf("Correct! You Win!");
+            break;
+        }
+        else if(guess < secret)
+        {
+            printf("Hint: Bigger Number\n");
+        }
+        else
+        {
+            printf("Hint: Smaller Number\n");
+        }
+    }
+
+    return 0;
+}
