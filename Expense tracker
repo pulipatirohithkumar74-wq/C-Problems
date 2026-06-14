@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    float expense, total = 0;
+
+    while(1)
+    {
+        printf("Enter expense (0 to stop): ");
+        scanf("%f",&expense);
+
+        if(expense == 0)
+            break;
+
+        total += expense;
+    }
+
+    printf("Total Expense = %.2f", total);
+
+    return 0;
+}
