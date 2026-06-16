@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int pin, attempts = 3;
+
+    while(attempts > 0)
+    {
+        printf("Enter PIN: ");
+        scanf("%d",&pin);
+
+        if(pin == 1234)
+        {
+            printf("Access Granted");
+            break;
+        }
+
+        attempts--;
+
+        if(attempts > 0)
+            printf("Wrong PIN! Attempts left: %d\n", attempts);
+    }
+
+    if(attempts == 0)
+        printf("Account Locked");
+
+    return 0;
+}
