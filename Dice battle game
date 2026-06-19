@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int player, computer;
+
+    srand(time(0));
+
+    player = rand()%6 + 1;
+    computer = rand()%6 + 1;
+
+    printf("Player rolled: %d\n", player);
+    printf("Computer rolled: %d\n", computer);
+
+    if(player > computer)
+        printf("Player Wins!");
+    else if(computer > player)
+        printf("Computer Wins!");
+    else
+        printf("Draw!");
+
+    return 0;
+}
