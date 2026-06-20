@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int m1,m2,m3,total;
+    float avg;
+
+    scanf("%d%d%d",&m1,&m2,&m3);
+
+    total = m1+m2+m3;
+    avg = total/3.0;
+
+    printf("Total = %d\n", total);
+    printf("Average = %.2f\n", avg);
+
+    if(avg >= 90)
+        printf("Grade A");
+    else if(avg >= 75)
+        printf("Grade B");
+    else if(avg >= 50)
+        printf("Grade C");
+    else
+        printf("Fail");
+
+    return 0;
+}
