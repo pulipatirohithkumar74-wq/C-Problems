@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int slots = 10;
+    int choice;
+
+    while(1)
+    {
+        printf("\n1.Park Car\n2.Remove Car\n3.Available Slots\n4.Exit\n");
+        scanf("%d",&choice);
+
+        if(choice == 1)
+        {
+            if(slots > 0)
+            {
+                slots--;
+                printf("Car Parked\n");
+            }
+            else
+                printf("Parking Full\n");
+        }
+        else if(choice == 2)
+        {
+            if(slots < 10)
+            {
+                slots++;
+                printf("Car Removed\n");
+            }
+        }
+        else if(choice == 3)
+        {
+            printf("Available Slots = %d\n", slots);
+        }
+        else
+            break;
+    }
+
+    return 0;
+}
