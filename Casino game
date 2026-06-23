@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int balance = 1000;
+    int lucky, guess;
+
+    srand(time(0));
+
+    lucky = rand()%5 + 1;
+
+    printf("Balance = ₹%d\n", balance);
+    printf("Guess number (1-5): ");
+    scanf("%d",&guess);
+
+    if(guess == lucky)
+    {
+        balance += 500;
+        printf("You Won ₹500\n");
+    }
+    else
+    {
+        balance -= 100;
+        printf("You Lost ₹100\n");
+    }
+
+    printf("Balance = ₹%d\n", balance);
+
+    return 0;
+}
