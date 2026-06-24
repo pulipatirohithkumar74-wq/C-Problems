@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char msg[50];
+
+    printf("You: ");
+    scanf("%s", msg);
+
+    if(strcmp(msg,"hello")==0)
+        printf("Bot: Hi!\n");
+
+    else if(strcmp(msg,"bye")==0)
+        printf("Bot: Goodbye!\n");
+
+    else if(strcmp(msg,"howareyou")==0)
+        printf("Bot: I am fine!\n");
+
+    else
+        printf("Bot: I don't understand.\n");
+
+    return 0;
+}
