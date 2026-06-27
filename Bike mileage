@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    float petrol, distance;
+
+    scanf("%f %f",&petrol,&distance);
+
+    printf("Mileage = %.2f km/l", distance/petrol);
+
+    return 0;
+}
