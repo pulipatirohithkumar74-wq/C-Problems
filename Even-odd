@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int user, computer = 6;
+
+    printf("Enter Number: ");
+    scanf("%d",&user);
+
+    if((user + computer) % 2 == 0)
+        printf("Even Wins");
+    else
+        printf("Odd Wins");
+
+    return 0;
+}
